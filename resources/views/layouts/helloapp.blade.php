@@ -2,24 +2,24 @@
 <head>
 <title>@yield('title')</title>
 <style>
-body {font-size:16pt; color:#999; margin:5px; }
+body {font-size:16pt; color:black; margin:5px; }
 h1 {font-size:50pt; text-align:right; color:#f6f6f6;
   margin:-20px 0px -30px 0px; letter-spacing:-4pt;}
 ul {font-size:12pt;}
-hr {margin:25px 100px; border-top:1px dashed #ddd;}
+hr {margin:25px 100px; border-top:1px dashed black; }
 .menutitle {font-size:14pt; font-weight:bold; margin:0px ;}
-.content {margin:10px;}
-.footer {text-align:right; font-size:10pt; margin:10px; border-bottom:solid 1px
-  #ccc; color:#ccc; }
+.content { margin:10px; }
+.footer { text-align:right; font-size:10pt; margin:10px; 
+border-bottom:solid 1px black; color:black; }
 </style>
 </head>
 <body>
- <h1> @yield('title') </h1>
+ <h1>@yield('title') </h1>
  @section('menubar')
  <h2 class="menutitle">メニュー</h2>
  <ul>
   <li>@show</li>
-</ul>
+</ul>s
 <hr size="1">
 <div class="content">
  @yield('content')
